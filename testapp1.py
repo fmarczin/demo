@@ -1,0 +1,4 @@
+import filedb
+
+dbdir = '.db'
+

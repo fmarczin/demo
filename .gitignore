@@ -1,0 +1,6 @@
+/htmlcov
+/.cache
+*.log
+.coverage
+*.pyc
+*,cover
