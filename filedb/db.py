@@ -29,18 +29,18 @@ class FileDB(object):
         self.usersfile.write('\n'.join(
             key + ':' + val for key, val in self.users.iteritems()))
 
-    def user_get(self, userid):
+    def __getitem__(self, userid):
         return self.users[userid]
 
-    def user_add(self, userid, name):
+    def __setitem__(self, userid, name):
         self.users[userid] = name
         self.save()
 
-    def user_del(self, userid):
+    def __delitem__(self, userid):
         del self.users[userid]
         self.save()
 
-    def user_exists(self, userid):
+    def __contains__(self, userid):
         return userid in self.users
 
 
@@ -66,20 +66,20 @@ class SQLiteDB(object):
         self.meta.create_all(self.engine)
         self.conn = self.engine.connect()
 
-    def user_get(self, userid):
+    def __getitem__(self, userid):
         sel = select([self.users.c.name]).where(self.users.c.id == userid)
         res = self.conn.execute(sel).fetchone()
         return res[0]
 
-    def user_add(self, userid, name):
+    def __setitem__(self, userid, name):
         self.conn.execute(
             self.users.insert()
                 .values(id=userid, name=name))
 
-    def user_del(self, userid):
+    def __delitem__(self, userid):
         self.conn.execute(self.users.delete().where(self.users.c.id == userid))
 
-    def user_exists(self, userid):
+    def __contains__(self, userid):
         res = self.conn.execute(select([self.users.c.id]).where(
             self.users.c.id == userid)).fetchone()
         return (res is not None and res[0] is not None)

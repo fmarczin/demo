@@ -26,27 +26,27 @@ def userdb(cleandb):
         'user3': 'User 3'
     }
     for userid, name in users.iteritems():
-        cleandb.user_add(userid, name)
+        cleandb[userid] = name
     return cleandb
 
 
 def test_add(cleandb):
-    cleandb.user_add('user1', 'User 1')
-    cleandb.user_add('user2', 'User 2')
-    assert cleandb.user_exists('user1') and cleandb.user_exists('user2')
+    cleandb['user1'] = 'User 1'
+    cleandb['user2'] = 'User 2'
+    assert ('user1' in cleandb) and ('user2' in cleandb)
 
 
 def test_find(userdb):
-    assert userdb.user_exists('user1')
-    assert userdb.user_exists('user2')
-    assert not userdb.user_exists('dummy')
+    assert 'user1' in userdb
+    assert 'user2' in userdb
+    assert not 'dummy' in userdb
 
 
 def test_get(userdb):
-    assert userdb.user_get('user1') is not None
+    assert userdb['user1'] is not None
 
 
 def test_remove(userdb):
-    assert userdb.user_exists('user1')
-    userdb.user_del('user1')
-    assert not userdb.user_exists('user1')
+    assert 'user1' in userdb
+    del userdb['user1']
+    assert not 'user1' in userdb
