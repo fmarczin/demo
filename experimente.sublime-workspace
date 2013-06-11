@@ -12,18 +12,10 @@
 	"buffers":
 	[
 		{
-			"file": "filedb/__init__.py",
-			"settings":
-			{
-				"buffer_size": 17,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "filedb/db.py",
 			"settings":
 			{
-				"buffer_size": 2395,
+				"buffer_size": 2514,
 				"line_ending": "Unix"
 			}
 		},
@@ -31,51 +23,77 @@
 			"file": "test/filedb_test.py",
 			"settings":
 			{
-				"buffer_size": 1041,
+				"buffer_size": 1116,
 				"line_ending": "Unix",
 				"name": "import pytest"
 			}
-		},
-		{
-			"contents": "Python 2.7.3 (default, Apr 10 2013, 06:20:15) \nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.13.2 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython's features.\n%quickref -> Quick reference.\nhelp      -> Python's own help system.\nobject?   -> Details about 'object', use 'object??' for extra details.\n\nIn [1]: import os\n\nIn [2]: os.getcwd()\nOut[2]: '/home/fm/projects/experimente/test'\n\nIn [3]: import filedb\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n<ipython-input-3-222f1eaac863> in <module>()\n----> 1 import filedb\n\nImportError: No module named filedb\n\nIn [4]: import sys\n\nIn [5]: print sys.path\n['/home/fm/.config/sublime-text-2/Packages/SublimeREPL/config/Python', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/distribute-0.6.24-py2.7.egg', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/pip-1.1-py2.7.egg', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages/distribute-0.6.24-py2.7.egg', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages/pip-1.1-py2.7.egg', '/home/fm/projects/experimente/test', '/home/fm/.virtualenvs/py27/lib/python2.7', '/home/fm/.virtualenvs/py27/lib/python2.7/plat-linux2', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-tk', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-old', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-dynload', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-linux2', '/usr/lib/python2.7/lib-tk', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/IPython/extensions']\n\nIn [6]: sys.path.append(os.path.abspath('.'))\n\nIn [7]: print sys.path\n['/home/fm/.config/sublime-text-2/Packages/SublimeREPL/config/Python', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/distribute-0.6.24-py2.7.egg', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/pip-1.1-py2.7.egg', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages/distribute-0.6.24-py2.7.egg', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages/pip-1.1-py2.7.egg', '/home/fm/projects/experimente/test', '/home/fm/.virtualenvs/py27/lib/python2.7', '/home/fm/.virtualenvs/py27/lib/python2.7/plat-linux2', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-tk', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-old', '/home/fm/.virtualenvs/py27/lib/python2.7/lib-dynload', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-linux2', '/usr/lib/python2.7/lib-tk', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages', '/home/fm/.virtualenvs/py27/lib/python2.7/site-packages', '/home/fm/.virtualenvs/py27/local/lib/python2.7/site-packages/IPython/extensions', '/home/fm/projects/experimente/test']\n\nIn [8]: print sys.path[-1]\n/home/fm/projects/experimente/test\n\nIn [9]: import filedb\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n<ipython-input-9-222f1eaac863> in <module>()\n----> 1 import filedb\n\nImportError: No module named filedb\n\nIn [10]: sys.path.append(os.path.abspath('..'))\n\nIn [11]: import filedb\n\nIn [12]: ",
-			"settings":
-			{
-				"buffer_size": 3293,
-				"line_ending": "Unix",
-				"name": "*REPL* [python]",
-				"scratch": true
-			}
 		}
 	],
-	"build_system": "Packages/Python Coverage/Python pytest with Coverage.sublime-build",
+	"build_system": "Python Tests",
 	"command_palette":
 	{
-		"height": 69.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
+				"dis",
+				"Package Control: Disable Package"
 			],
 			[
 				"enab",
 				"Package Control: Enable Package"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
 			],
 			[
 				"disab",
 				"Package Control: Disable Package"
 			],
 			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"repl py",
+				"SublimeREPL: Python - IPython"
+			],
+			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Load-Save Linting"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
 			],
 			[
 				"ena",
@@ -86,14 +104,6 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"dis",
-				"Package Control: Disable Package"
-			],
-			[
-				"pack",
-				"Package Control: Install Package"
-			],
-			[
 				"remo",
 				"Package Control: Remove Package"
 			],
@@ -102,11 +112,11 @@
 				"Bookmarks: Clear All"
 			]
 		],
-		"width": 449.0
+		"width": 435.0
 	},
 	"console":
 	{
-		"height": 139.0
+		"height": 269.0
 	},
 	"distraction_free":
 	{
@@ -119,10 +129,16 @@
 	},
 	"file_history":
 	[
+		"/home/fm/.config/sublime-text-2/Packages/Modific/README.md",
 		"/home/fm/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/fm/projects/experimente/filedb/__init__.py",
+		"/home/fm/projects/experimente/experimente.sublime-project",
+		"/home/fm/projects/experimente/.gitignore",
+		"/home/fm/projects/experimente/filedb/db.py,cover",
+		"/home/fm/.config/sublime-text-2/Packages/User/Python.sublime-settings",
+		"/home/fm/.config/sublime-text-2/Packages/Pylinter/Pylinter.sublime-settings",
 		"/home/fm/.config/sublime-text-2/Packages/User/JSON.sublime-settings",
 		"/home/fm/projects/experimente/testapp1.py",
-		"/home/fm/.config/sublime-text-2/Packages/User/Python.sublime-settings",
 		"/home/fm/projects/experimente/db/__init__.py",
 		"/home/fm/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt"
 	],
@@ -142,6 +158,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			"dbc",
+			"dbclass",
+			"filedb.",
 			"session",
 			"exist",
 			"FileDB",
@@ -173,138 +193,36 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "filedb/__init__.py",
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "filedb/db.py",
 					"settings":
 					{
-						"buffer_size": 2395,
+						"buffer_size": 2514,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										17,
+										17
+									]
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								1941,
-								1909
+								200,
+								200
 							]
 						],
 						"settings":
@@ -403,25 +321,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 710.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "test/filedb_test.py",
 					"settings":
 					{
-						"buffer_size": 1041,
+						"buffer_size": 1116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								109,
-								109
+								145,
+								145
 							]
 						],
 						"settings":
@@ -521,44 +439,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 3293,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3293,
-								3293
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "ea78eb16a7484c23b0521043bce2aec6",
-							"smart_indent": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 337.0,
+						"translation.y": 68.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -601,6 +482,10 @@
 	{
 		"height": 220.0
 	},
+	"output.vcs":
+	{
+		"height": 114.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -619,6 +504,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/home/fm/projects/experimente/experimente.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

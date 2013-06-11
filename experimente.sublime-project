@@ -17,7 +17,7 @@
     "build_systems":
     [
         {
-            "cmd": ["bash", "-c", "source ~/.virtualenvs/py27/bin/activate; py.test -v --cov filedb --cov-report term-missing"],
+            "cmd": ["bash", "-c", "source ~/.virtualenvs/py27/bin/activate; py.test -v --cov filedb --cov-report term-missing --cov-report html --cov-report annotate"],
             "working_dir": "${project_path}",
             "env": {"PYTHONPATH": "/home/fm/projects/experimente/"},
             "name": "Python Tests"

@@ -1,8 +1,7 @@
 import py
 import logging
-import sqlalchemy as sa
 from sqlalchemy import (
-    create_engine, MetaData, Table, Column, Integer, String, select)
+    create_engine, MetaData, Table, Column, String, select)
 
 
 log = logging.getLogger(__name__)
@@ -10,6 +9,7 @@ logging.basicConfig(level=logging.DEBUG, filename='debug.log')
 
 
 class FileDB(object):
+
     """FileDB object"""
     def __init__(self, dbpath=None):
         super(FileDB, self).__init__()
@@ -44,8 +44,8 @@ class FileDB(object):
         return userid in self.users
 
 
-
 class SQLiteDB(object):
+
     """SQLiteDB object"""
     def __init__(self, dbpath=None):
         super(SQLiteDB, self).__init__()
@@ -59,7 +59,8 @@ class SQLiteDB(object):
         log.debug('dburl: ' + dburl)
         self.engine = create_engine(dburl)
         self.meta = MetaData()
-        self.users = Table('users', self.meta,
+        self.users = Table(
+            'users', self.meta,
             Column('id', String, primary_key=True),
             Column('name', String))
         self.meta.create_all(self.engine)
@@ -79,5 +80,6 @@ class SQLiteDB(object):
         self.conn.execute(self.users.delete().where(self.users.c.id == userid))
 
     def user_exists(self, userid):
-        res = self.conn.execute(select([self.users.c.id]).where(self.users.c.id == userid)).fetchone()
+        res = self.conn.execute(select([self.users.c.id]).where(
+            self.users.c.id == userid)).fetchone()
         return (res is not None and res[0] is not None)
