@@ -15,7 +15,7 @@
 			"file": "filedb/db.py",
 			"settings":
 			{
-				"buffer_size": 2514,
+				"buffer_size": 2562,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,7 +23,7 @@
 			"file": "test/filedb_test.py",
 			"settings":
 			{
-				"buffer_size": 1116,
+				"buffer_size": 1006,
 				"line_ending": "Unix",
 				"name": "import pytest"
 			}
@@ -129,10 +129,14 @@
 	},
 	"file_history":
 	[
+		"/home/fm/projects/experimente/experimente.sublime-project",
+		"/home/fm/projects/otto-daily/etc-prod/deployment/otto_daily.stable.cfg",
+		"/home/fm/projects/otto-daily/etc-prod/supervisord.conf",
+		"/home/fm/projects/otto-daily/deploy/fabfile/__init__.py",
+		"/home/fm/projects/otto-daily/deploy/fabfile/deploy.py",
 		"/home/fm/.config/sublime-text-2/Packages/Modific/README.md",
 		"/home/fm/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/fm/projects/experimente/filedb/__init__.py",
-		"/home/fm/projects/experimente/experimente.sublime-project",
 		"/home/fm/projects/experimente/.gitignore",
 		"/home/fm/projects/experimente/filedb/db.py,cover",
 		"/home/fm/.config/sublime-text-2/Packages/User/Python.sublime-settings",
@@ -158,6 +162,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user_get",
+			"user_exists",
+			"user_add(",
+			"user_exists",
+			"user_del",
+			"user_add",
+			"user_get",
 			" ",
 			"dbc",
 			"dbclass",
@@ -201,7 +212,7 @@
 					"file": "filedb/db.py",
 					"settings":
 					{
-						"buffer_size": 2514,
+						"buffer_size": 2562,
 						"regions":
 						{
 							"bookmarks":
@@ -210,10 +221,6 @@
 								"icon": "bookmark",
 								"regions":
 								[
-									[
-										17,
-										17
-									]
 								],
 								"scope": "bookmarks"
 							}
@@ -221,8 +228,8 @@
 						"selection":
 						[
 							[
-								200,
-								200
+								2089,
+								2089
 							]
 						],
 						"settings":
@@ -321,25 +328,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 1,
 					"file": "test/filedb_test.py",
 					"settings":
 					{
-						"buffer_size": 1116,
+						"buffer_size": 1006,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								568,
+								568
 							]
 						],
 						"settings":
@@ -439,7 +452,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 68.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -464,11 +477,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.53794688363,
 			1.0
 		],
 		"rows":

@@ -1,4 +1,7 @@
-/htmlcov
+htmlcov/*
+htmlcov
+*~
+*.sublime-*
 /.cache
 *.log
 .coverage
