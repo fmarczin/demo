@@ -2,7 +2,10 @@ htmlcov/*
 htmlcov
 *~
 *.sublime-*
-/.cache
+.cache
+**/*.sw?
+*.sw?
+**/.cache
 *.log
 .coverage
 *.pyc
