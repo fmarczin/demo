@@ -1,6 +1,7 @@
 dist/*
 htmlcov/*
 htmlcov
+!doc
 *~
 *.sublime-*
 .cache
