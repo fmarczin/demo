@@ -1,3 +1,4 @@
+import collections
 import py
 import logging
 from sqlalchemy import (
@@ -7,13 +8,10 @@ log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG, filename='debug.log')
 
 
-class FileDB(dict):
+class FileDB(collections.MutableMapping):
 
     """FileDB object"""
-    def __init__(self, *args, **kwargs, dbpath=None):
-        if dbpath and (args or kwargs):
-
-        super(FileDB, self).__init__()
+    def __init__(self, dbpath=None):
         if dbpath is None:
             dbpath = py.path.local('.').join('users.db')
         self._dbpath = py.path.local(dbpath)
@@ -43,6 +41,12 @@ class FileDB(dict):
 
     def __contains__(self, userid):
         return userid in self._users
+
+    def __iter__(self):
+        return iter(self._users)
+
+    def __len__(self):
+        return len(self._users)
 
 
 class SQLiteDB(dict):
